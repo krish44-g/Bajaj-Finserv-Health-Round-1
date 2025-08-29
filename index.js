@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
 
 const FULL_NAME = "john_doe";
 const DOB = "17091999";
@@ -108,6 +107,5 @@ app.post('/bfhl', (req, res) => {
     }
 });
 
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
-
-
+// ✅ Export app for Vercel (no app.listen)
+module.exports = app;
