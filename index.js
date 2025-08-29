@@ -107,5 +107,5 @@ app.post('/bfhl', (req, res) => {
     }
 });
 
+// ✅ Export for Vercel (no app.listen)
 module.exports = app;
-
