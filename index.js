@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const PORT = 3000;
 
 const FULL_NAME = "john_doe";
 const DOB = "17091999";
@@ -107,5 +108,6 @@ app.post('/bfhl', (req, res) => {
     }
 });
 
-module.exports = app;
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+
 
